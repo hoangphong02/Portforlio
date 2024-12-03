@@ -6,6 +6,12 @@
   height: 40vmin;
   pointer-events: none;
 }
+:root{
+  --bg-color:#080808;
+  --second-bg-color: #101010;
+  --text-color:white;
+  --main-color:#ea580c;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,20 +19,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +27,74 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header{
+  position: fixed;
+  width: -webkit-fill-available;
+  top: 0;
+  left: 0;
+  padding: 4rem 15%;
+  background: rgba(0,0,0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon{
+  font-size: 3.5rem;
+  color: var(--main-color);
+  display:none;
+}
+
+.logo{
+  font-size: 3rem;
+  color: var(--text-color);
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.logo:hover{
+  transform: scale(1.1);
+}
+
+.logo span{
+  background: linear-gradient(270deg, #DF8908 10%, #ff1d15 100%);
+  background-clip: text;
+  color: transparent;
+
+}
+a{
+  text-decoration: none;
+}
+.navbar a{
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  border-bottom: 3px solid transparent;
+}
+.navbar a:hover {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
+
+.gradient-btn{
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  display: block;
+  background: linear-gradient(270deg, #DF8908 10%, #ff1d15 100%);
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: white;
+  border: none;
+  text-wrap: nowrap;
+}
+
+.gradient-btn:hover{
+  transform: scale(1.05);
 }
