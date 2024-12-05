@@ -1,25 +1,46 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const SectionContact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_vin9sxl", "template_9f8cjob", form.current, {
+        publicKey: "O3hnGv3eay_Zu0zqk",
+      })
+      .then(
+        () => {
+          toast.success("Contact sent successfully");
+          form.current.reset();
+        },
+        (error) => {
+          toast.error("Contact sending failed");
+        }
+      );
+  };
   return (
     <section className="contact" id="contact">
       <h2 className="heading">
         Contact <span>Me</span>
       </h2>
-      <form action="">
+      <form action="" ref={form} onSubmit={sendEmail}>
         <div className="input-group">
           <div className="input-box">
-            <input type="text" placeholder="Fullname" />
-            <input type="email" placeholder="Email" />
+            <input type="text" placeholder="Fullname" name="from_name" />
+            <input type="email" placeholder="Email" name="from_email" />
           </div>
           <div className="input-box">
-            <input type="number" placeholder="Phone number" />
-            <input type="text" placeholder="Subject" />
+            <input type="number" placeholder="Phone number" name="from_phone" />
+            <input type="text" placeholder="Subject" name="from_subject" />
           </div>
         </div>
         <div className="input-group-2">
           <textarea
-            name=""
+            name="message"
             id=""
             placeholder="Your Message"
             cols={30}
