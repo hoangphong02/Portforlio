@@ -28,7 +28,17 @@
     transform: rotate(360deg);
   }
 }
+ input[type=number]::-webkit-inner-spin-button,
+ input[type=number]::-webkit-outer-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+ }
 
+ input[type=number] {
+   -moz-appearance: textfield;
+   appearance: none;
+   /* Để hỗ trợ rộng hơn */
+ }
 .header{
   position: fixed;
   width: -webkit-fill-available;

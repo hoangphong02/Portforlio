@@ -9,9 +9,14 @@ const SectionContact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_vin9sxl", "template_9f8cjob", form.current, {
-        publicKey: "O3hnGv3eay_Zu0zqk",
-      })
+      .sendForm(
+        process.env.REACT_APP_YOUR_SERVICE_ID,
+        process.env.REACT_APP_YOUR_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: process.env.REACT_APP_YOUR_PUBLIC_KEY,
+        }
+      )
       .then(
         () => {
           toast.success("Contact sent successfully");
