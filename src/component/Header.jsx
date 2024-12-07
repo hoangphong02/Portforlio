@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="header">
       <a href="#home" className="logo">
-        Hoang <span>Phong</span>
+        Hoang <span>Phong Pham</span>
       </a>
       <i
         className={`bx ${show ? "bx-x" : "bx-menu"} menu-icon`}
