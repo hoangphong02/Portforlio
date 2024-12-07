@@ -31,7 +31,7 @@ const SectionTop = () => {
           </a>
         </div>
         <div className="btn-group">
-          <a href="#" className="btn">
+          <a href="#home" className="btn">
             Hire
           </a>
           <a href="#contact" className="btn">
