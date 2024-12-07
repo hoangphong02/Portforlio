@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="header">
       <a href="#home" className="logo">
-        Hoang <span>Phong Pham</span>
+        <span>H.P</span> Portfolio
       </a>
       <i
         className={`bx ${show ? "bx-x" : "bx-menu"} menu-icon`}
@@ -17,8 +17,8 @@ const Header = () => {
       <nav className={`navbar ${show ? "active" : ""}`}>
         <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#services">Services</a>
         <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
       <button className="gradient-btn">

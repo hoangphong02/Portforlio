@@ -1,10 +1,9 @@
 import "./App.css";
-import Footer from "./component/Footer";
 import Header from "./component/Header";
 import SectionAbout from "./component/SectionAbout";
 import SectionContact from "./component/SectionContact";
 import SectionProject from "./component/SectionProject";
-import SectionService from "./component/SectionService";
+import SectionSkill from "./component/SectionSkill";
 import SectionTop from "./component/SectionTop";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -14,10 +13,9 @@ function App() {
       <Header />
       <SectionTop />
       <SectionAbout />
-      <SectionService />
       <SectionProject />
+      <SectionSkill />
       <SectionContact />
-      <Footer />
       <ToastContainer
         toastStyle={{
           fontSize: "14px",
