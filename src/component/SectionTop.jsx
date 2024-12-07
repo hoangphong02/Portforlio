@@ -17,16 +17,16 @@ const SectionTop = () => {
           mobile applications.
         </p>
         <div className="social-icons">
-          <a href="#">
+          <a href="#home">
             <i className="bx bxl-github"></i>
           </a>
-          <a href="#">
+          <a href="#home">
             <i className="bx bxl-linkedin-square"></i>
           </a>
-          <a href="#">
+          <a href="#home">
             <i className="bx bxl-instagram-alt"></i>
           </a>
-          <a href="#">
+          <a href="#home">
             <i className="bx bxl-twitter"></i>
           </a>
         </div>

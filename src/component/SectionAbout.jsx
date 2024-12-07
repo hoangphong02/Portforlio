@@ -16,7 +16,7 @@ const SectionAbout = () => {
           developing user interfaces and experiences for both websites and
           mobile applications.
         </p>
-        <a className="btn">Read More</a>
+        <button className="btn">Read More</button>
       </div>
     </section>
   );
