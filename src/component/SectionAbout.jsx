@@ -20,7 +20,6 @@ const SectionAbout = () => {
           and leveraging modern technologies to deliver products that are both
           visually appealing and highly functional.
         </p>
-        <button className="btn">Read More</button>
       </div>
     </section>
   );
