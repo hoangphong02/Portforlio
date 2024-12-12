@@ -37,8 +37,14 @@
  input[type=number] {
    -moz-appearance: textfield;
    appearance: none;
-   /* Để hỗ trợ rộng hơn */
  }
+.modal{
+  color: var(--bg-color);
+}
+.modal img{
+  width: 100%;
+  height: auto;
+}
 .header{
   position: fixed;
   width: -webkit-fill-available;
@@ -404,6 +410,9 @@ section{
   font-size: 1.5rem;
   background-color: var(--main-color);
   border-radius: 4px;
+}
+.res-body{
+  min-height: 420px;
 }
 .features{
   display: flex;
