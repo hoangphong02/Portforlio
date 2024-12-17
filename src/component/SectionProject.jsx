@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import guest from "../asset/image/guest.png";
 import app from "../asset/image/app-point.jpg";
 import travel from "../asset/image/travel2.png";
+import decor from "../asset/image/decor.png";
 import { ModalApp } from "./ModalApp";
 
 const SectionProject = () => {
@@ -205,7 +206,7 @@ const SectionProject = () => {
               </div>
             ) : (
               <>
-                <img src={travel} alt="" loading="lazy" />
+                <img src={decor} alt="" loading="lazy" />
                 <h3>E-commerce Decoration</h3>
                 <p>
                   A website for selling festive decoration items with a shopping
